@@ -11,10 +11,11 @@ router.get('/add-product', (req, res, next) => {
 	// 	'<html><body><h1>Add Product</h1><form action="/admin/product" method="POST"><input type="text" name="title"/><button type="submit">Add Product</button></form></body></html>',
 	// );
 	//console.log('add-product : ' + rootDir);
+	//res.sendFile(path.join(__dirname, "../", 'views', 'add-product.html'));
 	res.sendFile(path.join(rootDir, 'views', 'add-product.html'));
 });
 
-router.post('/product', (req, res) => {
+router.post('/add-product', (req, res) => {
 	console.log(req.body);
 	res.redirect('/');
 });

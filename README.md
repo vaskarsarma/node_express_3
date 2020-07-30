@@ -6,3 +6,4 @@ Sample application to underatsn the usage of
 - Returned HTML file to client
 - Added 404.html page
 - Added helper function to get Root Directory
+- Add static files (css)

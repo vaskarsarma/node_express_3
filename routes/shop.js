@@ -9,6 +9,7 @@ const rootDir = require('../utils/path');
 router.get('/', (req, res, next) => {
 	//res.send(`<h1>Hello World!!!</h1>`);
 	//console.log('/ : ' + rootDir);
+	//res.sendFile(path.join(__dirname, '..', 'views', 'shop.html'));
 	res.sendFile(path.join(rootDir, 'views', 'shop.html'));
 });
 
